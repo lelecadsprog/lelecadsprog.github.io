@@ -157,6 +157,60 @@ html{
 scroll-behavior:smooth;
 }
 
+.special{
+background:#fff7f5;
+padding:60px 20px;
+}
+
+.special-card{
+display:flex;
+flex-wrap:wrap;
+align-items:center;
+gap:30px;
+max-width:900px;
+margin:auto;
+background:white;
+border-radius:10px;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+overflow:hidden;
+}
+
+.special-card img{
+width:400px;
+height:260px;
+object-fit:cover;
+}
+
+.special-info{
+padding:20px;
+flex:1;
+text-align:left;
+}
+
+.special-info h3{
+font-size:26px;
+margin-bottom:10px;
+}
+
+.special-info p{
+line-height:1.6;
+color:#555;
+}
+
+.special-btn{
+display:inline-block;
+margin-top:15px;
+background:#c0392b;
+color:white;
+padding:10px 20px;
+text-decoration:none;
+border-radius:5px;
+}
+
+.special-btn:hover{
+background:#a93226;
+}
+
 </style>
 
 </head>
@@ -212,6 +266,31 @@ scroll-behavior:smooth;
 <img src="./gyoza.jpg" width="100%">
 <h3>Gyoza</h3>
 <p>¥500</p>
+</div>
+
+</div>
+
+<div class="section special">
+
+<h2>Chef's Special</h2>
+
+<div class="special-card">
+
+<img src="images/r1.jpg" alt="Spicy Miso Ramen">
+
+<div class="special-info">
+
+<h3>Spicy Miso Ramen</h3>
+
+<p>
+Our signature seasonal ramen made with rich miso broth,
+slow cooked pork, fresh noodles, and house chili oil.
+</p>
+
+<a href="#reservation" class="special-btn">Reserve & Try It</a>
+
+</div>
+
 </div>
 
 </div>
