@@ -1,112 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Alexis Salvador | Developer</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+<title>Alexis Salvador | Software Engineer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Source Code Pro', monospace;
-}
-
 body{
-background:#0a0a0a;
-color:#00ff9c;
-overflow-x:hidden;
+font-family: 'Inter', sans-serif;
+margin:0;
+background:#f8fafc;
+color:#1e293b;
 }
 
-canvas{
-position:fixed;
-top:0;
-left:0;
-z-index:-1;
+header{
+background:#0f172a;
+color:white;
+padding:40px 20px;
+text-align:center;
+}
+
+header h1{
+margin:0;
+font-size:40px;
+}
+
+header p{
+opacity:0.8;
 }
 
 .container{
-max-width:900px;
+max-width:1000px;
 margin:auto;
 padding:40px 20px;
 }
 
-h1{
-font-size:40px;
-margin-bottom:10px;
-}
-
-.typing{
-font-size:20px;
-color:#00e1ff;
-margin-bottom:30px;
-}
-
 .section{
-margin-top:50px;
+margin-bottom:60px;
+}
+
+.section h2{
+border-left:5px solid #2563eb;
+padding-left:10px;
+margin-bottom:25px;
 }
 
 .card{
-background:#111;
+background:white;
 padding:25px;
-border:1px solid #00ff9c33;
-margin-top:20px;
-border-radius:8px;
-transition:0.3s;
-}
-
-.card:hover{
-transform:translateY(-5px);
-border-color:#00ff9c;
+border-radius:10px;
+box-shadow:0 4px 12px rgba(0,0,0,0.08);
+margin-bottom:20px;
 }
 
 .skills span{
 display:inline-block;
-margin:5px;
+background:#e2e8f0;
 padding:8px 12px;
-border:1px solid #00ff9c;
-border-radius:5px;
+margin:5px;
+border-radius:6px;
+font-size:14px;
 }
 
-a{
-color:#00e1ff;
-text-decoration:none;
+.project-title{
+font-weight:600;
+margin-bottom:5px;
 }
 
 footer{
-margin-top:60px;
-opacity:0.6;
+text-align:center;
+padding:30px;
+background:#0f172a;
+color:white;
+margin-top:50px;
 }
 
 </style>
+
 </head>
 
 <body>
 
-<canvas id="matrix"></canvas>
-
-<div class="container">
+<header>
 
 <h1>Alexis Salvador</h1>
+<p>Software Engineer | ASP.NET • C# • SQL</p>
+<p>Kanagawa, Japan</p>
 
-<div class="typing" id="typing"></div>
+</header>
+
+<div class="container">
 
 <div class="section">
 
 <h2>About Me</h2>
 
 <div class="card">
+
 <p>
-Software engineer based in Japan. I build backend systems, web applications,
-and database solutions using ASP.NET, C#, and SQL.
+Software Engineer with experience developing web applications using ASP.NET MVC,
+C#, JavaScript, and SQL databases. I have experience working with clients to gather
+requirements, build systems based on business needs, and deploy applications to
+production environments.
 </p>
+
+<p>
+I enjoy building systems that improve efficiency and solve real-world problems
+through technology.
+</p>
+
 </div>
 
 </div>
+
 
 <div class="section">
 
@@ -115,47 +126,128 @@ and database solutions using ASP.NET, C#, and SQL.
 <div class="card skills">
 
 <span>C#</span>
-<span>ASP.NET</span>
+<span>ASP.NET MVC</span>
 <span>SQL</span>
+<span>MySQL</span>
+<span>MSSQL</span>
 <span>JavaScript</span>
 <span>HTML</span>
 <span>CSS</span>
-<span>MySQL</span>
-<span>Git</span>
+<span>Bootstrap</span>
 
 </div>
 
 </div>
+
+
+<div class="section">
+
+<h2>Professional Experience</h2>
+
+<div class="card">
+
+<h3>Full Stack Software Engineer</h3>
+
+<p><strong>Seiko IT Solutions Philippines Inc.</strong></p>
+
+<p>Nov 2023 – Nov 2024</p>
+
+<ul>
+
+<li>Coordinated with clients to gather project requirements and system functionality.</li>
+
+<li>Developed web systems based on client business needs.</li>
+
+<li>Deployed developed applications to client servers.</li>
+
+</ul>
+
+</div>
+
+</div>
+
 
 <div class="section">
 
 <h2>Projects</h2>
 
 <div class="card">
-<h3>Warehouse System</h3>
-<p>Internal logistics management system built using ASP.NET and SQL.</p>
+
+<p class="project-title">Shipment Management System</p>
+
+<p>Built using ASP.NET MVC, C#, JavaScript, HTML, and MySQL.</p>
+
 </div>
 
 <div class="card">
-<h3>CSV Export Tool</h3>
-<p>Backend feature generating CSV files with proper Japanese encoding.</p>
+
+<p class="project-title">Applicant Management System</p>
+
+<p>Web-based system for managing applicants and recruitment workflow.</p>
+
 </div>
 
 <div class="card">
-<h3>Forecast Automation</h3>
-<p>SQL automation system filling missing daily forecast records.</p>
+
+<p class="project-title">Sales Management System</p>
+
+<p>Sales tracking and reporting system using ASP.NET MVC and MSSQL.</p>
+
 </div>
 
 </div>
+
+
+<div class="section">
+
+<h2>Education</h2>
+
+<div class="card">
+
+<p><strong>BS Information Technology</strong></p>
+
+<p>Specialization in Web Development</p>
+
+<p>De La Salle University - Dasmarinas</p>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>Certifications</h2>
+
+<div class="card">
+
+<ul>
+
+<li>Cisco Cybersecurity Essentials</li>
+<li>Cisco Introduction to Cybersecurity</li>
+<li>Cisco Networking Essentials</li>
+<li>Microsoft Technology Associate – Programming Using Java</li>
+<li>Microsoft Technology Associate – Database Administration</li>
+
+</ul>
+
+</div>
+
+</div>
+
 
 <div class="section">
 
 <h2>Contact</h2>
 
 <div class="card">
-<p>Email: your@email.com</p>
-<p>Location: Kanagawa, Japan</p>
-<p>GitHub: github.com/yourusername</p>
+
+<p>Email: salvadoralexis26@gmail.com</p>
+
+<p>GitHub: github.com/YOURUSERNAME</p>
+
+</div>
+
 </div>
 
 </div>
@@ -166,87 +258,6 @@ and database solutions using ASP.NET, C#, and SQL.
 
 </footer>
 
-</div>
-
-<script>
-
-const text = [
-"Software Engineer",
-"Backend Developer",
-"ASP.NET • C# • SQL",
-"Building systems that solve problems"
-]
-
-let count = 0
-let index = 0
-let currentText = ""
-let letter = ""
-
-function type(){
-
-if(count === text.length){
-count = 0
-}
-
-currentText = text[count]
-letter = currentText.slice(0, ++index)
-
-document.getElementById("typing").textContent = letter
-
-if(letter.length === currentText.length){
-count++
-index = 0
-setTimeout(type,1200)
-}else{
-setTimeout(type,60)
-}
-
-}
-
-type()
-
-
-const canvas = document.getElementById("matrix")
-const ctx = canvas.getContext("2d")
-
-canvas.height = window.innerHeight
-canvas.width = window.innerWidth
-
-const letters = "01"
-const fontSize = 14
-const columns = canvas.width/fontSize
-
-const drops = []
-
-for(let x=0;x<columns;x++)
-drops[x]=1
-
-function draw(){
-
-ctx.fillStyle="rgba(0,0,0,0.05)"
-ctx.fillRect(0,0,canvas.width,canvas.height)
-
-ctx.fillStyle="#00ff9c"
-ctx.font=fontSize+"px monospace"
-
-for(let i=0;i<drops.length;i++){
-
-const text=letters.charAt(Math.floor(Math.random()*letters.length))
-
-ctx.fillText(text,i*fontSize,drops[i]*fontSize)
-
-if(drops[i]*fontSize>canvas.height && Math.random()>0.975)
-drops[i]=0
-
-drops[i]++
-
-}
-
-}
-
-setInterval(draw,35)
-
-</script>
-
 </body>
+
 </html>
