@@ -56,6 +56,39 @@ display:inline-block;
 width:200px;
 }
 
+.reservation{
+background:#f8f8f8;
+}
+
+.reservation-form{
+max-width:400px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.reservation-form input{
+padding:12px;
+border:1px solid #ccc;
+border-radius:5px;
+font-size:14px;
+}
+
+.reservation-form button{
+background:#c0392b;
+color:white;
+border:none;
+padding:12px;
+font-size:16px;
+border-radius:5px;
+cursor:pointer;
+}
+
+.reservation-form button:hover{
+background:#a93226;
+}
+
 footer{
 background:#222;
 color:white;
@@ -115,17 +148,23 @@ Best Ramen in Town
 
 </div>
 
-<div class="section">
+<div class="section reservation">
 
 <h2>Reserve a Table</h2>
 
-<form>
+<form class="reservation-form">
 
-<input placeholder="Name"><br><br>
-<input placeholder="Date"><br><br>
-<input placeholder="Number of Guests"><br><br>
+<input type="text" placeholder="Full Name" required>
 
-<button>Reserve</button>
+<input type="email" placeholder="Email Address" required>
+
+<input type="date" required>
+
+<input type="time" required>
+
+<input type="number" placeholder="Number of Guests" min="1" max="10" required>
+
+<button type="submit">Book Reservation</button>
 
 </form>
 
