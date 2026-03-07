@@ -224,6 +224,30 @@ transform:scale(1.05);
 <p>© Sakura Ramen</p>
 
 </footer>
+<script>
+
+let slides = document.querySelectorAll(".slide");
+let index = 0;
+
+function showSlide() {
+
+  slides.forEach(slide => slide.style.opacity = 0);
+
+  slides[index].style.opacity = 1;
+
+  index++;
+
+  if(index >= slides.length){
+    index = 0;
+  }
+
+}
+
+setInterval(showSlide, 3000);
+
+showSlide();
+
+</script>
 
 </body>
 
